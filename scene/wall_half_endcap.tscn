@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c6by5467su5tm"]
+
+[ext_resource type="PackedScene" uid="uid://k0h8780i7dki" path="res://models/building/wall_half_endcap.glb" id="1_q01r3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hh0xo"]
+size = Vector3(2.1000001, 4.1, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=964647483]
+
+[node name="wall_half_endcap2" parent="." unique_id=2044363647 instance=ExtResource("1_q01r3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2127528440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0000001, 2.0297997, 0)
+shape = SubResource("BoxShape3D_hh0xo")

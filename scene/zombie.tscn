@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://qsn1r0u3pgau"]
+
+[ext_resource type="PackedScene" uid="uid://b4aeu4o4hj4tw" path="res://zombie.glb" id="1_tet0w"]
+[ext_resource type="AnimationLibrary" uid="uid://cmmkkdl0mi04j" path="res://zombie_idle.glb" id="2_4wibt"]
+
+[node name="zombie" type="Node3D" unique_id=1895725645]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=940416684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.8, 0.3)
+radius = 3.2
+height = 0.39999998
+
+[node name="zombie" parent="." unique_id=778128163 instance=ExtResource("1_tet0w")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 0.70000005, 0.90000004, 0.90000004)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="zombie" unique_id=1806171280]
+libraries/zombie_idle = ExtResource("2_4wibt")
